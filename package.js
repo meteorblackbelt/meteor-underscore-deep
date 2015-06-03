@@ -1,7 +1,7 @@
 Package.describe({
   name: "meteorblackbelt:underscore-deep",
   summary: "underscore-deep package",
-  version: "0.0.1",
+  version: "0.0.2",
   git: "https://github.com/meteorblackbelt/meteor-underscore-deep",
   documentation: null
 });
