@@ -1,7 +1,4 @@
-_ = require 'underscore'
-
-module.exports =
-
+_d = {
   deepKeys: deepKeys = (obj) ->
     throw new Error "deepKeys must be called on an object, not '#{obj}'" unless isPlainObject obj
     # In the base case where obj is empty, _.map(obj, ...) will produce []
@@ -161,3 +158,6 @@ module.exports =
     unless isPlainObject obj
       throw new Error "mapKeys must be called on an object, not '#{obj}'"
     _.object _.map(obj, (v,k) -> f_val k,v), _.values obj
+}
+
+_.mixin(_d)
